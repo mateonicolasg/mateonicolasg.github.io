@@ -1,138 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mateo Simbaña</title>
-    </head>
-    <body>
-        <main>
-            <header>
-                <h1>Mateo Simbaña</h1>
-            </header>
-            <nav>
-                <a href="index.html">About Me</a>
-                <a href="portfolio.html">Portfolio</a>
-            </nav>
-            <aside>
-                <!-- Información personal -->
-                <img src="Resources/profilePhoto.jpg" alt="Profile photo" width="130">
-                <p>Software Engineering Student at Escuela Politécnica Nacional</p>
-                <article>
-                    <h2>Contact Me</h2>
-                    <ul>
-                        <li><b>Email: </b><a href="mailto:mateonsg16@gmail.com">mateonsg16@gmail.com</a></li>
-                        <li><b>LinkedIn: </b><a href="https://www.linkedin.com/in/mateo-simba%C3%B1a-b1aa3438b/">linkedin.com/in/mateo-simbaña</a></li>
-                        <li><b>GitHub: </b><a href="https://github.com/mateonicolasg">github.com/mateonicolasg</a></li>
-                    </ul>
-                </article>
-                <nav>
-                    <ul>
-                        <li><a href="#aboutme">About Me</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#academicbackground">Academic Background</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#classschedule">Class Schedule</a></li>
-                    </ul>
-                </nav>
-            </aside>
 
-            <section id="aboutme">
-                <!-- Información general -->
-                <h2>About Me</h2>
-                <article>
-                    <p>Passionate about data management and the development of technological solutions. 
-                    Recognized for continuous learning, analytical thinking, and strong commitment to 
-                    creating efficient and high-quality software.</p>
-                </article>                
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Curriculum - Mateo Simbaña</title>
+    <link rel="stylesheet" href="css/accesibilidad.css">
+</head>
 
-            <section id="experience">
-                <!-- Experiencia laboral -->
-                <h2>Experience</h2>
-                <article>
-                    <h3>General Logistics Assistant</h3>
-                    <p>Ludolab | October 2024 - January 2025</p>
-                    <ul>
-                        <li>Reviewed portfolios, planning progress, and evaluations from tutors and beneficiaries.</li>
-                        <li>Prepared detailed reports and certificates for tutors and project participants.</li>
-                        <li>Verified and adjusted reports, certificates, and final documentation for the digital inclusion program.</li>
-                    </ul>
-                </article>
-            </section>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-            <section id="academicbackground">
-                <!-- Formación académica -->
-                <h2>Academic Background</h2>
-                <article>
-                    <p>2016-2022</p>
-                    <h4>High School Studies</h4>
-                    <p>Unidad Educativa Manuela Cañizares, Quito, Ecuador</p>
-                </article>
+    <header class="site-header">
+        <h1>Mateo Simbaña</h1>
+        <p>Software Engineering Student at Escuela Politécnica Nacional</p>
+    </header>
 
-                <article>
-                    <p>2022-Present</p>
-                    <h4>Software Engineering Studies</h4>
-                    <p>Escuela Politécnica Nacional, Quito, Ecuador</p>
-                </article>
-            </section>
+    <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Academic Background</a></li>
+            <li><a href="#skills">Outstanding Skills</a></li>
+            <li><a href="#portfolio">Portfolio Article</a></li>
+            <li><a href="#video-section">Presentation Video</a></li>
+            <li><a href="#contact-table">Contact</a></li>
+        </ul>
+    </nav>
 
-            <section id="certifications">
-                <!-- Formación Complementaria -->
-                <h2>Certifications</h2>
-                <article>
-                    <p>May 2024 - 40 hours</p>
-                    <h4>Network Technician</h4>
-                    <p>Cisco Networking Academy</p>
-                </article>
-            </section>
+    <main id="main-content" tabindex="-1">
 
-            <section id="classschedule">
-                <!-- Horario de Clases-->
-                <h2>Class Schedule</h2>
-                <table>
+        <section class="profile-section" aria-labelledby="profile-title">
+            <h2 id="profile-title">Personal Profile</h2>
+
+            <img src="resources/profilePhoto.jpg"
+                alt="Photograph of Mateo Simbaña, Software Engineering student at Escuela Politécnica Nacional"
+                width="160">
+
+            <p>
+                Seventh-semester student specializing in web application development
+                and database management. Academic experience in Java, Python, HTML,
+                CSS, and SQL applied to building structured and functional applications.
+            </p>
+        </section>
+
+        <section id="about-me" aria-labelledby="about-title">
+            <h2 id="about-title">About Me</h2>
+
+            <p>
+                I am a Software Engineering student at Escuela Politécnica Nacional.
+                My academic interests include frontend development, backend development,
+                databases, and the creation of accessible web interfaces.
+            </p>
+        </section>
+
+        <section id="experience" aria-labelledby="experience-title">
+            <h2 id="experience-title">Experience</h2>
+
+            <article>
+                <h3>General Logistics Assistant</h3>
+                <p><strong>Ludolab</strong> | October 2024 - January 2025</p>
+
+                <ul>
+                    <li>Reviewed portfolios, planning progress, and evaluations from tutors and beneficiaries.</li>
+                    <li>Prepared detailed reports and certificates for tutors and project participants.</li>
+                    <li>Verified and adjusted reports, certificates, and final documentation for the digital inclusion
+                        program.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Floral Decorating Assistant</h3>
+                <p><strong>MaribelFloral</strong> | July 2022 - January 2024</p>
+
+                <ul>
+                    <li>Coordinated and assembled floral arrangements.</li>
+                    <li>Managed orders and suppliers.</li>
+                    <li>Prepared and managed customer quotations using Microsoft Office.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="education" aria-labelledby="education-title">
+            <h2 id="education-title">Academic Background</h2>
+
+            <article>
+                <p><strong>2016 - 2022</strong></p>
+                <h3>High School Studies</h3>
+                <p>Unidad Educativa Manuela Cañizares, Quito, Ecuador.</p>
+            </article>
+
+            <article>
+                <p><strong>2022 - Present</strong></p>
+                <h3>Software Engineering Studies</h3>
+                <p>Escuela Politécnica Nacional, Quito, Ecuador.</p>
+            </article>
+        </section>
+
+        <section id="certifications" aria-labelledby="certifications-title">
+            <h2 id="certifications-title">Certifications</h2>
+
+            <article>
+                <p><strong>May 2024 - 40 hours</strong></p>
+                <h3>Network Technician</h3>
+                <p>Cisco Networking Academy.</p>
+            </article>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">Outstanding Skills</h2>
+
+            <article>
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SQL</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Frameworks and Tools</h3>
+                <ul>
+                    <li>Unity</li>
+                    <li>SQLite</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                    <li>Firebase Storage</li>
+                    <li>Git and GitHub</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem-solving</li>
+                    <li>Adaptability</li>
+                    <li>Time management</li>
+                    <li>Effective communication</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Spanish: Native</li>
+                    <li>English: Intermediate</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="portfolio" aria-labelledby="portfolio-title">
+            <h2 id="portfolio-title">Portfolio Article</h2>
+
+            <article aria-labelledby="polieats-title">
+                <h3 id="polieats-title">Restaurant Management System – PoliEats, 2024</h3>
+
+                <img src="resources/portfolioImages/PoliEats/polieats2.png"
+                    alt="Screenshot of PoliEats, a desktop system for restaurant order registration and inventory control"
+                    width="300">
+
+                <p>
+                    <strong>Description:</strong> Desktop application designed for managing
+                    the restaurant or cafeteria at Escuela Politécnica Nacional. It facilitates
+                    order registration and efficient inventory control of products.
+                </p>
+
+                <p><strong>Technologies Used:</strong> Java.</p>
+
+                <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/mateonicolasg/PoliEats_ProyectoEDA.git">
+                        GitHub Repository for PoliEats
+                    </a>
+                </p>
+            </article>
+
+            <article aria-labelledby="knockout-title">
+                <h3 id="knockout-title">Interactive Entertainment Application – Knockout Game, 2024</h3>
+
+                <img src="resources/portfolioImages/Knockout/knockout3.png"
+                    alt="Screenshot of Knockout Game, a two-player 2D fighting game developed in Unity" width="300">
+
+                <p>
+                    <strong>Description:</strong> 2D fighting game for two players, allowing
+                    one versus one battles in various arenas. Available as a desktop application
+                    or web version, hosted on the Itch.io platform.
+                </p>
+
+                <p><strong>Technologies Used:</strong> Unity, C#, SQLite.</p>
+
+                <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/mateonicolasg/Knockout-Game.git">
+                        GitHub Repository for Knockout Game
+                    </a>
+                </p>
+            </article>
+
+            <article aria-labelledby="cinemax-title">
+                <h3 id="cinemax-title">Cinema Management System – CineMax, 2025</h3>
+
+                <img src="resources/portfolioImages/CineMax/cinemax1.jpg"
+                    alt="Screenshot of CineMax, a desktop system for cinema management, ticket sales, and reports"
+                    width="300">
+
+                <p>
+                    <strong>Description:</strong> Desktop application developed for the
+                    administrative and operational management of a cinema. It includes modules
+                    for employee management, theaters, showtimes, ticket sales, electronic
+                    invoicing, and sales report generation.
+                </p>
+
+                <p><strong>Technologies Used:</strong> Java, PostgreSQL, Maven, Firebase Storage.</p>
+
+                <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/mateonicolasg/CineMax.git">
+                        GitHub Repository for CineMax
+                    </a>
+                </p>
+            </article>
+
+            <article aria-labelledby="fitec-title">
+                <h3 id="fitec-title">Gym Management System – FITEC, 2025</h3>
+
+                <img src="resources/portfolioImages/FITEC/fitec1.jpg"
+                    alt="Screenshot of FITEC, a gym management system for clients, instructors, subscriptions, and supplements"
+                    width="300">
+
+                <p>
+                    <strong>Description:</strong> Desktop application for a gym network with
+                    two branches in Quito, North and South. It implements a distributed database
+                    to manage clients, instructors, subscriptions, and dietary supplements.
+                </p>
+
+                <p><strong>Technologies Used:</strong> Java, SQL Server.</p>
+
+                <p>
+                    <strong>Link:</strong>
+                    <a href="https://github.com/mateonicolasg/FITEC-BDD.git">
+                        GitHub Repository for FITEC
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section id="video-section" aria-labelledby="video-title">
+            <h2 id="video-title">Presentation Video</h2>
+
+            <p>
+                This video presents an overview of my skills and experiences as a software
+                engineering student. It includes Spanish subtitles and a written transcription.
+            </p>
+
+            <video class="presentation-video" width="600" height="400" controls
+                aria-label="Presentation video of Mateo Simbaña">
+                <source src="resources/video/presentation_video.mp4" type="video/mp4">
+                <track kind="subtitles" src="resources/video/subtitles_es.vtt" srclang="es" label="Español" default>
+                Your browser does not support the video tag.
+            </video>
+
+            <button type="button" class="transcription-button" aria-expanded="false" aria-controls="video-transcription"
+                onclick="toggleTranscription()">
+                Show video transcription
+            </button>
+
+            <div id="video-transcription" class="transcription-box" lang="es" aria-live="polite" hidden>
+                <h3>Video Transcription</h3>
+
+                <p>
+                    Hola con todos, bienvenidos a mi vídeo de presentación. Mi nombre es Mateo Simbaña
+                    y soy estudiante de Ingeniería de Software en la Escuela Politécnica Nacional.
+                </p>
+
+                <p>
+                    Durante mi formación he trabajado en proyectos donde la tecnología ayuda a resolver
+                    problemas concretos, como registrar pedidos, organizar inventarios, gestionar información
+                    de clientes o presentar datos de forma más clara. Esto me ha permitido entender que una buena
+                    solución no solo debe funcionar, sino también ahorrar tiempo, reducir errores y ser fácil
+                    de usar para las personas.
+                </p>
+
+                <p>
+                    Entre mis principales habilidades están la resolución de problemas, el trabajo en equipo,
+                    la adaptación y la comunicación. Considero que estas habilidades son importantes porque
+                    permiten entender mejor las necesidades de los usuarios y aportar en la construcción de
+                    soluciones útiles.
+                </p>
+
+                <p>
+                    Muchas gracias.
+                </p>
+            </div>
+        </section>
+        <section id="contact-table" aria-labelledby="contact-title">
+            <h2 id="contact-title">Contact</h2>
+
+            <p>
+                The following table presents my main contact channels. Each cell can be
+                focused using the keyboard to improve navigation and readability.
+            </p>
+
+            <table class="contact-table">
+                <caption>Personal contact information</caption>
+
+                <thead>
                     <tr>
-                        <td>Hour</td>
-                        <td>Monday</td>
-                        <td>Tuesday</td>
-                        <td>Wednesday</td>
-                        <td>Thursday</td>
-                        <td>Friday</td>
+                        <th scope="col" tabindex="0">Contact Type</th>
+                        <th scope="col" tabindex="0">Information</th>
+                        <th scope="col" tabindex="0">Action</th>
                     </tr>
+                </thead>
+
+                <tbody>
                     <tr>
-                        <td>07:00 - 09:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>Ingeniería financiera</td>
-                        <td>Construcción y evolución de software</td>
+                        <td tabindex="0">Email</td>
+                        <td tabindex="0">mateonsg16@gmail.com</td>
+                        <td tabindex="0">
+                            <a href="mailto:mateonsg16@gmail.com">
+                                Send email to Mateo Simbaña
+                            </a>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td>09:00 - 11:00</td>
-                        <td></td>
-                        <td>Construcción y evolución de software</td>
-                        <td></td>
-                        <td>Calidad de software</td>
-                        <td>Calidad de software</td>
+                        <td tabindex="0">LinkedIn</td>
+                        <td tabindex="0">linkedin.com/in/mateo-simbaña</td>
+                        <td tabindex="0">
+                            <a href="https://www.linkedin.com/in/mateo-simba%C3%B1a-b1aa3438b/">
+                                Open Mateo Simbaña LinkedIn profile
+                            </a>
+                        </td>
                     </tr>
+
                     <tr>
-                        <td>11:00 - 13:00</td>
-                        <td>Aplicaciones web</td>
-                        <td>Aplicaciones web</td>
-                        <td>Tecnologías de seguridad</td>
-                        <td></td>
-                        <td>Tecnologías de seguridad</td>
+                        <td tabindex="0">GitHub</td>
+                        <td tabindex="0">github.com/mateonicolasg</td>
+                        <td tabindex="0">
+                            <a href="https://github.com/mateonicolasg">
+                                Open Mateo Simbaña GitHub profile
+                            </a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>14:00 - 16:00</td>
-                        <td></td>
-                        <td>Metodologías ágiles</td>
-                        <td></td>
-                        <td>Gestión de procesos y calidad</td>
-                        <td>Metodologías ágiles</td>
-                    </tr>
-                </table>
-            </section>
-        </main>
-    </body>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script>
+        function toggleTranscription() {
+            const transcription = document.getElementById("video-transcription");
+            const button = document.querySelector(".transcription-button");
+
+            const isHidden = transcription.hasAttribute("hidden");
+
+            if (isHidden) {
+                transcription.removeAttribute("hidden");
+                button.textContent = "Hide video transcription";
+                button.setAttribute("aria-expanded", "true");
+            } else {
+                transcription.setAttribute("hidden", "");
+                button.textContent = "Show video transcription";
+                button.setAttribute("aria-expanded", "false");
+            }
+        }
+    </script>
+</body>
+
 </html>
